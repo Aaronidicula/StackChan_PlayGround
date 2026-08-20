@@ -37,7 +37,7 @@ def main():
     args = TrainingArguments(
         batch_size=4,
         num_epochs=1,  # 1 epoch is usually enough for SetFit contrastive learning
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True
     )
